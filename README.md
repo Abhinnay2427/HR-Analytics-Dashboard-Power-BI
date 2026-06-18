@@ -39,9 +39,10 @@ Business Insights
 
 **📂** **Data Source**
 
-**Source Type:** 
+**Source Type:** CSV File
 
-**Dataset Name:**
+**Dataset Name:** https://1drv.ms/x/c/00b1e276a52f7d08/IQDKNcEKJWCiTIQu5Gbt6R8sAbhZMTc4AW846VCHc2bQ1sw?e=ykFnyn
+
 
 **Dataset Includes:**
 
@@ -76,7 +77,7 @@ The dataset was cleaned and transformed using Power Query.
 
 ---
 
-**📊** Exploratory Data Analysis (EDA)
+**📊** **Exploratory Data Analysis (EDA)**
 
 The following analyses were performed:
 
@@ -120,50 +121,50 @@ The following analyses were performed:
 
 * **HR Analytics Dashboard**
 
-KPI Cards
+1. KPI Cards
 
-Active Employees
+2. Active Employees
 
-Total Employees
+3. Total Employees
 
-Average Performance
+4. Average Performance
 
-Attrition Rate
+5. Attrition Rate
 
-Average Salary
+6. Average Salary
 
 * **Visualizations**
 
 **Employee Distribution**
 
-Donut Chart
+1. Donut Chart
 
-Total Employees by Department
+2. Total Employees by Department
 
 * **Attendance Analysis**
 
-Line Chart
+1. Line Chart
 
-Average Attendance by Month
+2. Average Attendance by Month
 
 * **Attrition Analysis**
 
-Bar Chart
+1, Bar Chart
 
-Attrition Count by Exit Reason
+2. Attrition Count by Exit Reason
 
 * **Recruitment Analysis**
 
-Donut Chart
+1. Donut Chart
 
-Joined Employees by Source
+2. Joined Employees by Source
 
 * **Interactive Slicers**
-Department
-Location
-Gender
-Job Level
-Employment Status
+1. Department
+2. Location
+3. Gender
+4. Job Level
+5. Employment Status
 
 
 ***Dashboard 2:**
@@ -177,16 +178,260 @@ Training Hours by Training Program
 * **Programs Included**:
 
 ✔ Excel Advanced
-✔ Six Sigma
+
 ✔ Power BI
-✔ SAP HR
+
 ✔ Leadership Skills
-✔ Python Basics
+
 ✔ POSH Awareness
+
 ✔ Agile & Scrum
+
 ✔ Communication Skills
-✔ Keka HRMS
+
 ✔ Data Analytics
+
+---
+
+**💡** **Key Insights**
+
+**Workforce Insights**
+
+1. Employee distribution is balanced across departments.
+
+2. Data Analytics and IT departments have strong representation.
+
+**Attendance Insights**
+
+1. Attendance remains consistently above 87%.
+
+2. Workforce engagement remains stable.
+
+**Top recruitment channels:**
+
+1. Indeed
+2. Campus Hiring
+3. Shine Naukri
+4. Attrition Insights
+
+**Major reasons for employee exits:**
+
+1. Work Culture
+2. Family Reasons
+3. No Growth Opportunities
+4. Personal Reasons
+5. Training Insights
+
+**Top training programs:**
+
+* Excel Advanced
+* Six Sigma
+* Power BI
+* SAP HR
+* Leadership Skills
+
+---
+
+  
+
+**🛠 ****Tools & Technologies**
+
+  
+| Category      | Tool             |
+| ------------- | ---------------- |
+| Visualization | Power BI         |
+| Data Cleaning | Power Query      |
+| Data Modeling | DAX              |
+| Data Source   | CSV / Excel      |
+| Documentation | GitHub           |
+| Reporting     | Power BI Desktop |
+
+
+---
+
+
+**📁** **Repository Structure**
+
+
+HR-Analytics-Dashboard/
+
+│
+
+├── Data/
+
+│   └── HR_Analytics.csv
+
+│
+
+├── PowerBI/
+
+│   └── HR_Analytics_Dashboard.pbix
+
+│
+
+├── Screenshots/
+
+│   ├── HR_Analytics_Dashboard.png
+
+│   └── Training_Dashboard.png
+
+│
+
+├── README.md
+
+│
+
+└── LICENSE
+
+---
+
+
+
+**📋** **Data Structure**
+
+
+
+| Column Category      | Description                     |
+| -------------------- | ------------------------------- |
+| Employee Information | Employee ID, Gender, Department |
+| Job Information      | Job Level, Employment Status    |
+| Salary Information   | Employee Salary                 |
+| Performance Metrics  | Performance Score               |
+| Attendance Metrics   | Attendance Percentage           |
+| Recruitment Data     | Hiring Source                   |
+| Attrition Data       | Exit Reason                     |
+| Training Data        | Training Program & Hours        |
+
+
+
+
+---
+
+
+
+**🔄** **Raw Data**
+
+The original dataset was imported from a CSV file and contained workforce information, attendance records, recruitment data, training records, and attrition details.
+
+
+---
+
+
+**✅** **Structured & Cleaned Data**
+
+**After Power Query transformation:**
+
+* Removed duplicate records
+* Standardized values
+* Corrected data types
+* Created business-ready datasets
+* Optimized for dashboard reporting
+
+---
+
+**📊** **DAX Measures Used**
+
+
+**Total Employees =**
+COUNT(Employee_ID)
+
+**Active Employees =**
+CALCULATE(
+    COUNT(Employee_ID),
+    Employment_Status = "Active"
+)
+
+**Average Salary =**
+AVERAGE(Salary)
+
+**Average Performance =**
+AVERAGE(Performance_Score)
+
+**Attrition Rate % =**
+DIVIDE(
+    Attrition_Count,
+    Total_Employees
+) * 100
+
+---
+
+
+**🖼** **Dashboard Preview**
+
+
+**HR Analytics Dashboard**
+
+Provides a complete overview of employee metrics, attendance, recruitment performance, and attrition analysis.
+
+<img width="1157" height="655" alt="Screenshot 2026-06-18 125235" src="https://github.com/user-attachments/assets/3ab49b41-4aca-4fe7-98bd-af7078dd9323" />
+
+---
+
+
+**Training Dashboard**
+
+Provides insights into employee learning and development through training participation analysis.
+
+<img width="1160" height="648" alt="Screenshot 2026-06-18 125254" src="https://github.com/user-attachments/assets/1e06ae52-7feb-43b0-a588-fc98753b7f01" />
+
+---
+
+
+**⭐** **Project Highlights**
+
+
+* End-to-End Power BI Project
+* HR Analytics Reporting
+* KPI Monitoring
+* Interactive Dashboard Design
+* DAX Calculations
+* Data Cleaning using Power Query
+* Employee Attrition Analysis
+* Recruitment Source Analytics
+* Training Effectiveness Analysis
+* Executive-Level Reporting
+
+---
+
+**🚀** **Future Enhancements**
+
+* SQL Database Integration
+* Real-Time Data Refresh
+* Predictive Attrition Analytics
+* Machine Learning Models
+* Workforce Forecasting
+* Mobile Dashboard Version
+
+---
+
+**⚠** **Disclaimer**
+
+This project is developed for educational and portfolio purposes only. The dataset used is sample HR data and does not represent any real organization or employee information.
+
+
+---
+
+**📜** **License**
+
+This project is licensed under the MIT License.
+
+---
+
+
+**👨‍💻** **Author**
+
+**Jujare Sai Abhinay**
+
+🎓 B.Com (Computer Applications) 
+
+📧 Email: jsaibhinay53@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/j-sai-abhinay-594822362/
+
+----
+
+
+
 
 
 
