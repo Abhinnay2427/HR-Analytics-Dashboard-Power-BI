@@ -77,44 +77,6 @@ The dataset was cleaned and transformed using Power Query.
 
 ---
 
-**📊** **Exploratory Data Analysis (EDA)**
-
-The following analyses were performed:
-
-✔ **Employee Analysis:**
-
-1. Employee Count
-
-2. Active Employees
-
-3. Department Distribution
-
-✔ **Attendance Analysis:**
-
-1. Average Attendance
-
-2. Monthly Attendance Trend
-
-3. Recruitment Analysis
-
-✔ **Hiring Source Performance:**
-
-1. Joined Employees by Source
-
-2. Attrition Analysis
-
-3. Exit Reasons
-
-✔ **Attrition Trends:**
-
-1. Training Analysis
-
-2. Training Hours
-  
-3. Training Program Effectiveness
-
----
-
 **📈** **Power BI Dashboard**
 
 **Dashboard 1:** 
